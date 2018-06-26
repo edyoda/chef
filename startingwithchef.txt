@@ -1,0 +1,25 @@
+su
+wget https://packages.chef.io/files/stable/chefdk/1.2.22/el/7/chefdk-1.2.22-1.el7.x86_64.rpm
+sudo rpm -ivh chefdk-1.2.22-1.el7.x86_64.rpm
+sudo chef-client --local-mode
+
+
+vim learn.rb  			## To write basic ruby code
+package 'apache' do
+	package_name 'httpd'
+end
+
+ruby -c learn.rb 		## checks ruby syntax
+foodcritic learn.rb		## check chef code. It shall give some warning
+
+OR 
+$ruby -c learn.rb && foodcritic learn.rb
+
+$chef-client --local-mode learn.rb 
+
+$status httpd
+
+$systemctl statud httpd
+
+
+ 

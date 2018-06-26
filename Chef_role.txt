@@ -1,0 +1,43 @@
+## example of Role  in chef
+
+{
+"name": ”web",
+"description": ”Role for our web sever nodes for wordpress application",
+"json_class": "Chef::Role",
+"default_attributes": {
+	Directory: "C"
+},
+"override_attributes": {
+	Directory "C"
+},
+"chef_type": "role",
+"run_list": [
+"recipe[apache2]",
+"recipe[apache2::websites]",
+"role[monitoring]"
+],
+"env_run_lists": {
+}
+}
+
+
+## envrionment
+{
+"name": "production",
+"description": ”Role for our web sever nodes for wordpress application",
+"json_class": "Chef::Environment",
+"default_attributes": {
+	Directory: "D"
+},
+"override_attributes": {
+	Directory :"D"
+},
+"chef_type": "Environment",
+"run_list": [
+"recipe[apache2]",
+"recipe[apache2::websites]",
+"role[monitoring]"
+],
+"env_run_lists": {
+}
+}

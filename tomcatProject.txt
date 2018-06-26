@@ -1,0 +1,17 @@
+
+chef generate recipe tomcat6
+First prepare tomcat6.rb
+
+
+To be written in jenkins' build step
+cd /home/ec2-user/mychefrepo/cookbooks
+chef-client --local-mode my2ndcookbook/recipes/tomcat6.rb
+service tomcat6 status
+
+
+echo you server is ready to be deployed the .war file
+
+Basically, comment out the following lines in your /etc/sudoers file:
+
+#Defaults    requiretty
+#Defaults   !visiblepw

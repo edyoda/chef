@@ -1,0 +1,10 @@
+https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-chef-recipes
+
+http://jtimberman.housepub.org/blog/2011/09/03/guide-to-writing-chef-cookbooks/
+
+
+ami-52c7b43d
+ami-d5c18eba
+http://clarkdave.net/2013/05/creating-ec2-instances-in-an-amazon-vpc-using-chef-and-knife/
+
+http://michaellihs.github.io/devops/2015/07/28/chefspec.html

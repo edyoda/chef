@@ -1,0 +1,3 @@
+chef-client --local-mode -r "recipe[cookbook_name::recipe_name]"
+
+chef-client --local-mode -r "recipe[cookbook_name::recipe_name],recipe[cookbook_name2::recipe_name2]"
